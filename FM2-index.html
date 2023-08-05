@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result summary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+        .Mark-distribution{
+        background-color: rgb(78, 78, 240);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 225px;
+        height: 310px; 
+        position: absolute;
+        border-radius: 15px; 
+        align-items: center;
+        }
+        .Result-summery{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgb(231, 231, 249) 10px 25px 15px;
+        width: 450px;
+        height: 310px;
+        border-radius: 15px;
+        margin-left: 400px;
+        margin-top: 150px;
+        }
+        .Reaction-data{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        margin-left: 240px;
+        color: red;
+        background-color: rgb(253, 236, 236);
+        width: 180px;
+        height: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        position: relative;
+        }
+        .reaction-text{
+            margin-left: 5px;
+        }
+        .reaction-mark{
+            position: absolute; 
+            right: 15px; 
+            color: black; 
+            font-weight: bold;
+        }
+        .reaction-mark span{
+            color: rgb(166, 166, 166);
+        }
+        .Memory-data{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        margin-left: 240px;
+        color: rgb(242, 178, 59);
+        background-color: rgb(252, 252, 235);
+        width: 180px;
+        height: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        position: relative; 
+        }
+        .memory-text{
+            margin-left: 5px;
+        }
+        .memory-mark{
+            position: absolute;
+            right: 15px; 
+            color: black; 
+            font-weight: bold;
+        }
+        .memory-mark span{
+            color: rgb(166, 166, 166);
+        }
+        .Verbal-data{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        margin-left: 240px;
+        color: green;
+        background-color: rgb(235, 250, 235);
+        width: 180px;
+        height: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        position: relative;
+        }
+        .verbal-text{
+            margin-left: 5px;
+        }
+        .verbal-mark{
+            position: absolute; 
+            right: 15px; 
+            color: black; 
+            font-weight: bold;
+        }
+        .verbal-mark span{
+          color: rgb(166, 166, 166);
+        }
+        .Visual-data{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        margin-left: 240px;
+        color: blueviolet;
+        background-color: rgb(242, 228, 255);
+        width: 180px;
+        height: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        position: relative;
+        }
+        .visual-text{
+        margin-left: 5px;
+        }
+        .visual-mark{
+            position: absolute; 
+            right: 15px; 
+            color: black; 
+            font-weight: bold;
+        }
+        .visual-mark span{
+            color: rgb(166, 166, 166);
+        }
+        .continue{
+        width: 190px; 
+        height: 35px; 
+        background-color: rgb(78, 78, 240); 
+        color: white; 
+        margin-left: 240px; 
+        margin-top: 10px; 
+        border-radius: 30px; 
+        border: none;
+        }
+        .exact-mark{
+        border-radius: 70px;
+        width: 120px;
+        height: 120px;
+        box-shadow: inset -0px 50px 50px -10px rgba(0, 0, 0, 0.2);
+        }
+        .Click-icon{
+        height: 20px; 
+        position: absolute; 
+        top: 40px; 
+        right: 25px; 
+        }
+        .container{
+            position: relative;
+        }
+        .result-section{
+            color: rgb(220, 220, 220);
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .gain-mark{
+            text-align: center; 
+            font-size: 45px;
+            margin: 15px;
+        }
+        .Total-mark{
+            text-align: center; 
+            font-size: 13px; 
+            color: rgb(211, 211, 211); 
+            margin-bottom: 0px;
+        }
+        .Great{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .achivement{
+        color: rgb(220, 220, 220); 
+        font-size: 13px; 
+        width: 180px; 
+        text-align: center; 
+        margin: 0px;
+    }
+        </style>
+</head>
+<body>
+    <div class="Result-summery">
+        <h3 style="margin-left: 240px;">Summary</h3>
+            <div class="Reaction-data">    
+                <img src="images/icon-reaction.svg">
+                <p class="reaction-text">Reaction</p>
+                <p class="reaction-mark">80 
+                <span>/ 100</span></p>
+            </div>        
+            <div class="Memory-data">
+                <img src="images/icon-memory.svg">
+                <p class="memory-text">Memory</p>
+                <p class="memory-mark">80 
+                <span>/ 100</span></p>
+            </div>        
+            <div class="Verbal-data">
+            <img src="images/icon-verbal.svg">
+                <p class="verbal-text">Verbal</p>
+                <p class="verbal-mark">80 
+                <span>/ 100</span></p>
+            </div>        
+            <div class="Visual-data">
+            <img src="images/icon-visual.svg">
+                <p class="visual-text">Visual</p>
+                <p class="visual-mark">80 
+                <span>/ 100</span></p>
+            </div>
+            <div class="container">
+                <button class="continue">Continue</button>
+                <img class="Click-icon"src="images/touch-hand-mouse-cursor-click-png-18.png">
+            </div>        
+            <div class="Mark-distribution">
+                <header class="result-section">Your Result</header>
+                <div class="exact-mark">
+                    <p class="gain-mark">76</p>
+                    <p class="Total-mark">of 100</p>
+                </div>
+                <main class="Great">Great</main>
+                <p class="achivement">You scored higher than 65% of the people who have taken these tests.</p>
+                </div>
+            </div>
+    </body>
+</html>
